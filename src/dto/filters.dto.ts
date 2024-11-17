@@ -14,4 +14,8 @@ export class FiltersProductsDto {
   @IsNumber()
   @Min(0)
   maxPrice?: number;
+
+  @IsOptional()
+  @IsString()
+  category?: string;
 }
